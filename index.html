@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakBraker - マイク入力1秒遅延再生</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎤 SpeakBraker</h1>
+            <p class="subtitle">マイク入力1秒遅延再生アプリ</p>
+            
+            <div class="status-display">
+                <p class="status-label">状態:</p>
+                <p id="status" class="status-text">停止中</p>
+            </div>
+            
+            <div class="delay-control">
+                <label for="delaySelect">遅延秒数:</label>
+                <select id="delaySelect" class="delay-select">
+                    <option value="1">1秒</option>
+                    <option value="2">2秒</option>
+                    <option value="3">3秒</option>
+                    <option value="4">4秒</option>
+                    <option value="5">5秒</option>
+                </select>
+            </div>
+            
+            <div class="info-box">
+                <p>マイクに向かって話すと<br><span id="selectedDelay">1</span>秒遅れてそのまま再生されます</p>
+            </div>
+            
+            <button id="toggleBtn" class="btn btn-primary">開始</button>
+            
+            <div class="info-section">
+                <h3>ℹ️ 使用方法</h3>
+                <ol>
+                    <li>「開始」ボタンをクリック</li>
+                    <li>マイクへのアクセスを許可</li>
+                    <li>マイクに向かって話す</li>
+                    <li>1秒後に同じ音声がスピーカーから再生されます</li>
+                </ol>
+            </div>
+            
+            <div class="info-section">
+                <h3>🔧 技術情報</h3>
+                <ul>
+                    <li>サンプルレート: <span id="sampleRate">-</span> Hz</li>
+                    <li>チャンネル: <span id="channels">-</span></li>
+                    <li>遅延時間: <span id="delayTime">-</span> 秒</li>
+                    <li>バッファサイズ: <span id="bufferSize">-</span> サンプル</li>
+                </ul>
+            </div>
+            
+            <div class="error-box" id="errorBox" style="display: none;">
+                <p id="errorMessage"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
