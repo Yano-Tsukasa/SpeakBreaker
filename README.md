@@ -1,4 +1,4 @@
-# SpeakBraker - マイク入力遅延再生 Webアプリ
+# SpeakBreaker - マイク入力遅延再生 Webアプリ
 
 ## 概要
 マイクから入力された音声を遅延再生するシンプルなWebアプリです。現在は1〜5秒の遅延を選択できます。
@@ -11,7 +11,7 @@
 
 ## プロジェクト構成
 ```
-SpeakBraker/
+SpeakBreaker/
 ├── index.html       # メインページ
 ├── style.css        # スタイルシート
 ├── script.js        # オーディオ処理ロジック
