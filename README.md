@@ -69,14 +69,6 @@ http://localhost:8000
 
 ---
 
-### VS Code Live Server
-
-1. `Live Server` 拡張機能をインストール
-2. `index.html` を右クリック
-3. `Open with Live Server` を選択
-
----
-
 ## Usage
 
 1. アプリを開く
